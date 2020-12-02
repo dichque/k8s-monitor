@@ -37,7 +37,7 @@ Cons:
 2. Will not be able to monitor external critical systems
 
 
-## Solution 2: (Events)[https://kubernetes.io/docs/tasks/debug-application-cluster/events-stackdriver/]
+## Solution 2: [https://kubernetes.io/docs/tasks/debug-application-cluster/events-stackdriver/](Events)
 All activity of k8s objects are logged to events, which can be exported to third party log/event aggregation, messaging & alerting systems. Develop or leverage open source event exporter to filter & act on critical events
 
 Pros:
