@@ -23,7 +23,7 @@
 1. cadvisor
 2. metrics server
 
-## Solution 1: Prometheus centric
+## Solution 1: [Prometheus](https://prometheus.io/) centric
 Instrument k8s cluster and ensure all k8s components export health state, capacity & performance metrics for prometheus to ingest. Automate deployment & configuration prometheus & alertmanager as part of cluster provisioning.
 Leverage prometheus operator for automation.
 
@@ -37,7 +37,7 @@ Cons:
 2. Will not be able to monitor external critical systems
 
 
-## Solution 2: [https://kubernetes.io/docs/tasks/debug-application-cluster/events-stackdriver/](Events)
+## Solution 2: [Events](https://kubernetes.io/docs/tasks/debug-application-cluster/events-stackdriver/) driven
 All activity of k8s objects are logged to events, which can be exported to third party log/event aggregation, messaging & alerting systems. Develop or leverage open source event exporter to filter & act on critical events
 
 Pros:
